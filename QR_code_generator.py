@@ -19,7 +19,6 @@ def load_image(img):
 # Application
 def main():
     menu = ["Home", "DecodeQR", "Kelompok Y"]
-    
     choice = st.sidebar.selectbox("Menu", menu)
     
     if choice == "Home":
@@ -31,16 +30,13 @@ def main():
             submit_button = st.form_submit_button("Generate")
 
         # Layout
-        if submit_button:
-            
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                
+        if submit_button:         
+            col1, col2 = st.columns(2)            
+            with col1:                
                 # Add data
                 qr.add_data(raw_text)
                 
-                # Generate
+                # Generate QR
                 qr.make(fit=True)
                 img = qr.make_image(fill_color='black', back_color='white')
                 
