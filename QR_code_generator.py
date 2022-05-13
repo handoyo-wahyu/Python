@@ -1,10 +1,10 @@
 # Modules
+import cv2
 import streamlit as st
 import numpy as np
 import os
 import time
 timestr = time.strftime("%Y%m%d-%H%M%S")
-import cv2
 
 # QR Code
 import qrcode
@@ -41,7 +41,7 @@ def main():
                 img = qr.make_image(fill_color='black', back_color='white')
                 
                 # Filename
-                img_filename = 'QRimage_{}.png'.format(timestr)
+                img_filename = 'QR_image_{}.png'.format(timestr)
                 
                 # Save file
                 path_for_image = os.path.join('image_folder', img_filename)
