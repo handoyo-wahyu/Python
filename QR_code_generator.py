@@ -18,7 +18,7 @@ def load_image(img):
 
 # Application
 def main():
-    menu = ["Home", "DecodeQR", "Kelompok Y"]
+    menu = ["Home", "Decode QR", "Kelompok Y"]
     choice = st.sidebar.selectbox("Menu", menu)
     
     if choice == "Home":
