@@ -54,8 +54,8 @@ def main():
                 st.info("Original Text")
                 st.write(raw_text)
         
-    elif choice == "DecodeQR":
-        st.subheader("DecodeQR")
+    elif choice == "Decode QR":
+        st.subheader("Decode QR")
 
         image_file = st.file_uploader("Upload Image",type=['jpg','png','jpeg'])
         
