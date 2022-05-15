@@ -1,7 +1,7 @@
 # Modules
+import cv2
 import streamlit as st
 import numpy as np
-import cv2
 import os
 import time
 timestr = time.strftime("%Y%m%d-%H%M%S")
