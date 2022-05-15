@@ -18,11 +18,11 @@ def load_image(img):
 
 # Application
 def main():
-    menu = ["Home", "Decode QR", "Kelompok Y"]
+    menu = ["Generate QR", "Decode QR", "Kelompok Y"]
     choice = st.sidebar.selectbox("Menu", menu)
     
-    if choice == "Home":
-        st.subheader("Home")
+    if choice == "Generate QR":
+        st.subheader("Generate QR")
         
         # Text input
         with st.form(key='myqr_form'):
