@@ -8,7 +8,7 @@ timestr = time.strftime("%Y%m%d-%H%M%S")
 
 # QR Code
 import qrcode
-qr = qrcode.QRCode(version=1,error_correction=qrcode.constants.ERROR_CORRECT_L,box_size=10,border=14)
+qr = qrcode.QRCode(version=1,error_correction=qrcode.constants.ERROR_CORRECT_L,box_size=10,border=4)
 
 # Load image
 from PIL import Image
